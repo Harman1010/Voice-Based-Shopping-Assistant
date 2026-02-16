@@ -1,0 +1,14 @@
+##Brief write up
+I developed a Voice Command Shopping Assistant using Hugging Face Transformers and Gradio, designed to enable hands-free shopping list management through natural language voice interaction.
+
+The system leverages OpenAI’s Whisper model for multilingual speech recognition and a zero-shot classification model (DistilBART-MNLI) to identify user intent, such as adding, removing, modifying, or searching for items.
+
+After intent detection, lightweight parsing logic extracts item names, quantities, and optional price filters. A modular shopping list engine maintains state, 
+while a recommendation module generates frequency-based suggestions, seasonal recommendations, and substitute alternatives to enhance user experience.
+
+The architecture follows a clear pipeline:
+voice input → speech-to-text → intent classification → command parsing → shopping logic → recommendation engine → UI feedback. 
+
+This modular design improves maintainability and scalability while remaining efficient for CPU-based deployment.
+
+The application is deployed on Hugging Face Spaces using Gradio, ensuring accessibility and ease of interaction. The project demonstrates practical AI integration, modular software design, and production-oriented deployment within an 8-hour development constraint.
