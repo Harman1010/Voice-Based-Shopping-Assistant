@@ -14,7 +14,7 @@ Natural language understanding via zero-shot classification
 
 Flexible phrasing support (e.g., “Add milk”, “I want to buy apples”)
 
-**Shopping List Management****
+**Shopping List Management**
 
 Add / Remove / Modify items
 
@@ -39,11 +39,17 @@ Substitute recommendations (e.g., almond milk for milk)
 **Architecture**
 
 **Voice Input**
+
 1.Whisper (Speech-to-Text)
+
 2.Zero-shot Intent Classification
+
 3.Command Parsing
+
 4.Shopping List Engine
+
 5.Recommendation Engine
+
 6.Gradio UI
 
 **Deployment**
