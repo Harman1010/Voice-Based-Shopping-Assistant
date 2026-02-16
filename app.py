@@ -107,7 +107,15 @@ with gr.Blocks() as app:
     gr.Markdown("# 🛒 Voice Command Shopping Assistant")
     gr.Markdown("Speak your shopping command below.")
 
-    audio_input = gr.Audio(type="filepath", label="🎤 Speak Command")
+    gr.Markdown("""
+    ### Example Commands
+    1. Add 2 apples   
+    2. Remove milk  
+    3. Modify apples to 5
+    """)
+
+
+    audio_input = gr.Audio(type="filepath", label="Speak Command")
     status_output = gr.Textbox(label="System Feedback")
     list_output = gr.Textbox(label="Shopping List")
     suggestions_output = gr.Textbox(label="Suggestions")
